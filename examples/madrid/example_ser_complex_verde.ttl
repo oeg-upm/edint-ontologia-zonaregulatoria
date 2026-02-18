@@ -1,0 +1,49 @@
+@prefix : <http://example.org/resource/> .
+@prefix edintzone: <http://vocab.linkeddata.es/datosabiertos/def/common/zone#> .
+@prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# SER Zone Instance
+#################################################################
+
+:SER_Madrid_ZonaVerde
+    a edintzone:RegulatedParkingZone ;
+    rdfs:label "Zona SER Madrid - Centro"@es ;
+    edintzone:locatedIn :Municipio_Madrid ;
+    edintzone:managedBy :Ayuntamiento_Madrid ;
+    edintzone:startDate "2005-01-01"^^xsd:date ;
+    edintzone:scheduleDescription "Lunes a viernes de 09:00 a 21:00; sábados de 09:00 a 15:00; domingos y festivos sin servicio. Prioridad para residentes."@es ;
+    edintzone:legalReference <https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Ordenanza-de-Movilidad-Sostenible/?vgnextfmt=default&vgnextoid=d73fff17a1151610VgnVCM1000001d4a900aRCRD&vgnextchannel=220e31d3b28fe410VgnVCM1000000b205a0aRCRD&idCapitulo=10613950> ;
+    geo:hasGeometry :SER_Madrid_ZonaAzul_Calles .
+
+#################################################################
+# Geometry
+#################################################################
+
+## For performance reasons, huge WKT file is referenced as an external resource.
+
+:SER_Madrid_ZonaAzul_Calles
+    a sf:Geometry ;
+    geo:asWKT <https://example.org/geometries/example_ser_complex_verde_geo.wkt> . .
+
+
+#################################################################
+# Municipality (Minimal Instance)
+#################################################################
+
+:Municipio_Madrid
+    a esadm:Municipio ;
+    rdfs:label "Madrid"@es .
+
+#################################################################
+# Managing Organization
+#################################################################
+
+:Ayuntamiento_Madrid
+    a org:Organization ;
+    rdfs:label "Ayuntamiento de Madrid"@es .
