@@ -1,16 +1,14 @@
-# XXX Ontology
+# Ontología para la representación de Zonas Regulatorias
 
-The XXX ontology describes the domain of XXX
-
+Esta ontología tiene como propósito definir, categorizar y relacionar las Zonas Regulatorias en el contexto de la movilidad inteligente y la gestión urbana (Smart Cities). Se ha diseñado como una extensión modular de la ontología del Sector Público de España (esadm).
 
 # Purpose and scope of the vocabulary
 
-The purpose of the XXX ontology is to YYYY. 
-The scope of the XXX ontology is limited to ZZZ.
+Actualmente, existen vocabularios para divisiones administrativas (esadm) y geometrías (GeoSPARQL), pero existía un vacío semántico para representar entidades funcionales que se superponen a la trama urbana (ZBE, Carga y Descarga, etc...) sin responder a límites administrativos fijos. Esta ontología cubre dicho hueco.
 
 # Ontology prefix and namespace
 
-The XXX ontology prefix is: XXX and it is published under the namespace: https://webdomain.ext/def/domain/subdomain# 
+The ontology prefix is: `edintzone` and it is published under the namespace: [http://vocab.linkeddata.es/datosabiertos/def/common/zone#](http://vocab.linkeddata.es/datosabiertos/def/common/zone#)
 
 # Ontology Conceptualization Image
 
@@ -44,4 +42,4 @@ generate an issue (work in progress)
 
 # Funding
 
-Add here project funding and needed images.
+TODO
