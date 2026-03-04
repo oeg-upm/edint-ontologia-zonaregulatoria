@@ -97,6 +97,26 @@
     "@value" : "0.1.0"
   } ]
 }, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#CommercialZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Urban area or axis characterized by a high density of commercial and service activity, frequently supported by regional commerce regulations under the figure of Open Commercial Zone."
+  }, {
+    "@language" : "es",
+    "@value" : "Área o eje urbano caracterizado por una alta densidad de actividad comercial y de servicios, frecuentemente amparada por normativas autonómicas de comercio bajo la figura de Zona Comercial Abierta (ZCA)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Commercial Zone"
+  }, {
+    "@language" : "es",
+    "@value" : "Zona Comercial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#EconomicInterestZone"
+  } ]
+}, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#EconomicInterestZone",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -137,6 +157,26 @@
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#EconomicInterestZone"
   } ]
 }, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#GreenSpaceZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Espacio libre, parque o área natural urbana sujeta a un régimen de protección urbanística que limita su edificabilidad y regula su uso público, vital para estrategias de mitigación climática y calidad del aire."
+  }, {
+    "@language" : "en",
+    "@value" : "Open space, park, or urban natural area subject to a spatial planning protection regime that limits buildability and regulates public use, vital for climate mitigation and air quality strategies."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Green Space Zone"
+  }, {
+    "@language" : "es",
+    "@value" : "Zona Verde"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedZone"
+  } ]
+}, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#HighTourismInfluxZone",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -172,6 +212,46 @@
   }, {
     "@language" : "en",
     "@value" : "Historical Center"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedZone"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#IndustrialZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Area delimited by urban planning and Cadastre intended predominantly to host industrial, logistics, and business activities."
+  }, {
+    "@language" : "es",
+    "@value" : "Área delimitada por el planeamiento urbanístico (PGOU) y el Catastro destinada predominantemente a albergar actividades industriales, logísticas y empresariales."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Industrial Zone"
+  }, {
+    "@language" : "es",
+    "@value" : "Polígono Industrial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#EconomicInterestZone"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#LeisureZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Area with a high concentration of leisure and hospitality establishments. Frequently subject to specific urban and environmental regulations, such as Special Acoustic Protection Zones."
+  }, {
+    "@language" : "es",
+    "@value" : "Área con alta concentración de establecimientos de ocio y hostelería. Frecuentemente sujeta a regulaciones urbanísticas y medioambientales específicas, como las Zonas de Protección Acústica Especial (ZPAE)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Leisure Zone"
+  }, {
+    "@language" : "es",
+    "@value" : "Zona de Ocio"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedZone"
@@ -252,6 +332,46 @@
   }, {
     "@language" : "es",
     "@value" : "Zona de Estacionamiento Disuasorio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedParkingZone"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#PedestrianZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Road or area reserved entirely or partially for pedestrian traffic, with strict speed regulations for permitted vehicles and a general prohibition on parking."
+  }, {
+    "@language" : "es",
+    "@value" : "Vía o área reservada total o parcialmente para la circulación de peatones, con regulaciones estrictas de velocidad para los vehículos permitidos y prohibición general de estacionamiento."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pedestrian Zone"
+  }, {
+    "@language" : "es",
+    "@value" : "Zona Peatonal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedZone"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#ReducedMobilityParkingZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Parking zone legally reserved for vehicles transporting Persons with Reduced Mobility (PRM), regulated by municipal and national accessibility laws."
+  }, {
+    "@language" : "es",
+    "@value" : "Zona de estacionamiento reservada legalmente para vehículos que transportan a Personas con Movilidad Reducida (PMR), regulada por normativas municipales y estatales de accesibilidad."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Reduced Mobility Parking Zone"
+  }, {
+    "@language" : "es",
+    "@value" : "Zona de Estacionamiento PMR"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedParkingZone"
@@ -339,6 +459,26 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedParkingZone"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#RestrictedAccessZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Urban area (such as Residential Priority Areas) where vehicle access is limited to residents, public transport, or authorized vehicles for reasons of traffic flow, safety, or road capacity."
+  }, {
+    "@language" : "es",
+    "@value" : "Área urbana (como las Áreas de Prioridad Residencial - APR) donde el acceso de vehículos está limitado a residentes, transporte público o vehículos autorizados por motivos de fluidez, seguridad o capacidad viaria."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Restricted Access Zone"
+  }, {
+    "@language" : "es",
+    "@value" : "Zona de Acceso Restringido"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#RegulatedZone"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/common/zone#ScienceTechnologyPark",
